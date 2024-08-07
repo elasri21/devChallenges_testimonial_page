@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+:root {
+    --orange: #F5C044;
+    --green: #4CA154;
+    --dark: #18181B;
+    --dark-grey: #52525A;
+    --grey: #D4D4D8;
+    --main-bg: #FAFAF9;
+    --white: #fff;
+
+    --family: "Sora", sans-serif;
+
+    --big-size: 36px;
+    --body-size: 20px;
+    --normal-size: 16px;
+    --small-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding: 50px 80px !important;
+    }
+}
+@media (min-width: 922px) and (max-width: 1199px) {
+    body {
+        padding: 50px 60px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 921px) {
+    body {
+        padding: 50px 40px !important;
+    }
+}
+body {
+    font-family: var(--family);
+    background-color: var(--main-bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px;
+}
+@media (min-width: 922px) {
+    main > div {
+        width: calc(50% - 30px) !important;
+    }
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+main > div {
+    width: 100%;
+}
+main .reviews .big-star {
+    width: 50px;
+    height: 50px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+main .reviews .big-star i {
+    font-size: 18px;
+    color: var(--white);
+}
+main .reviews h1 {
+    font-size: var(--big-size);
+    text-transform: capitalize;
+    color: var(--dark);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+main .reviews p {
+    font-size: var(--body-size);
+    font-weight: 400;
+    color: var(--dark-grey);
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+main .reviews .check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+main .reviews .check-list div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main .reviews .check-list div span {
+    font-size: var(--small-size);
+    text-transform: capitalize;
+    color: var(--dark-grey);
+}
+
+main .companies {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+main .companies .company {
+    padding: 25px 30px;
+    background-color: var(--white);
+    border-radius: 10px;
+    width: fit-content;
+}
+main .companies .company:first-of-type {
+    align-self: flex-end;
+}
+main .companies .company .stars {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+main .companies .company .stars .company-name {
+    height: 24px;
+}
+main .companies .company h2 {
+    font-size: var(--normal-size);
+    text-transform: capitalize;
+    color: var(--dark);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+main .companies .company p {
+    font-size: var(--normal-size);
+    color: var(--dark-grey);
+}
